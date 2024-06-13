@@ -69,8 +69,16 @@ int main(int argc, char *argv[]) {
     int name_count, username_count;
 
     if (argc > 1) {
-        // Read names from provided file
-        readNamesFromFile(argv[1], names, &name_count);
+        if (argc == 2) {
+            // Read names from provided file with both first and last names
+            readNamesFromFile(argv[1], names, &name_count);
+        } else if (argc == 3) {
+            // Read names from separate first and last name files
+            createUsernamesFromCommonNames(argv[1], argv[2], names, &name_count);
+        } else {
+            printf("Usage: %s <name_file> or %s <first_name_file> <last_name_file>\n", argv[0], argv[0]);
+            return 1;
+        }
     } else {
         // Menu option to create names
         printf("No file provided. Do you want to create usernames based on common names? (y/n): ");
