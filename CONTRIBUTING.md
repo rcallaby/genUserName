@@ -1,8 +1,4 @@
-Certainly! Here is a `CONTRIBUTING.md` file for your `genUserName` repository:
-
----
-
-# Contributing to genUserName
+# Contributing to the repository.
 
 Thank you for considering contributing to genUserName! This project aims to help create a series of unique usernames based on a dictionary or file supplied by the user. The project is written in C.
 
