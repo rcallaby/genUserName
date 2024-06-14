@@ -44,6 +44,18 @@ void generateUsernames(char names[MAX_NAMES][MAX_NAME_LENGTH], int name_count, c
         last_lower[strlen(last)] = '\0';
 
         // Generate usernames
+        sprintf(usernames[(*username_count)++], "%s%s", first);
+        sprintf(usernames[(*username_count)++], "%s%s", last);
+        sprintf(usernames[(*username_count)++], "%s%s%s", first, last);
+        sprintf(usernames[(*username_count)++], "%s.%s%s", first, last);
+        sprintf(usernames[(*username_count)++], "%c%s%s", first[0], last);
+        sprintf(usernames[(*username_count)++], "%s%c%s", first, last[0]);
+        sprintf(usernames[(*username_count)++], "%c.%s%s", first[0], last);
+        sprintf(usernames[(*username_count)++], "%s.%c%s", first, last[0]);
+        sprintf(usernames[(*username_count)++], "%s_%s%s", first, last);
+        sprintf(usernames[(*username_count)++], "%c_%s%s", first[0], last);
+        sprintf(usernames[(*username_count)++], "%s_%c%s", first, last[0]);
+
         sprintf(usernames[(*username_count)++], "%s%s", first, date);
         sprintf(usernames[(*username_count)++], "%s%s", last, date);
         sprintf(usernames[(*username_count)++], "%s%s%s", first, last, date);
@@ -56,6 +68,18 @@ void generateUsernames(char names[MAX_NAMES][MAX_NAME_LENGTH], int name_count, c
         sprintf(usernames[(*username_count)++], "%c_%s%s", first[0], last, date);
         sprintf(usernames[(*username_count)++], "%s_%c%s", first, last[0], date);
 
+        sprintf(usernames[(*username_count)++], "%s%s", first_upper);
+        sprintf(usernames[(*username_count)++], "%s%s", last_upper);
+        sprintf(usernames[(*username_count)++], "%s%s%s", first_upper, last_upper);
+        sprintf(usernames[(*username_count)++], "%s.%s%s", first_upper, last_upper);
+        sprintf(usernames[(*username_count)++], "%c%s%s", first_upper[0], last_upper);
+        sprintf(usernames[(*username_count)++], "%s%c%s", first_upper, last_upper[0]);
+        sprintf(usernames[(*username_count)++], "%c.%s%s", first_upper[0], last_upper);
+        sprintf(usernames[(*username_count)++], "%s.%c%s", first_upper, last_upper[0]);
+        sprintf(usernames[(*username_count)++], "%s_%s%s", first_upper, last_upper);
+        sprintf(usernames[(*username_count)++], "%c_%s%s", first_upper[0], last_upper);
+        sprintf(usernames[(*username_count)++], "%s_%c%s", first_upper, last_upper[0]);
+
         sprintf(usernames[(*username_count)++], "%s%s", first_upper, date);
         sprintf(usernames[(*username_count)++], "%s%s", last_upper, date);
         sprintf(usernames[(*username_count)++], "%s%s%s", first_upper, last_upper, date);
@@ -67,6 +91,18 @@ void generateUsernames(char names[MAX_NAMES][MAX_NAME_LENGTH], int name_count, c
         sprintf(usernames[(*username_count)++], "%s_%s%s", first_upper, last_upper, date);
         sprintf(usernames[(*username_count)++], "%c_%s%s", first_upper[0], last_upper, date);
         sprintf(usernames[(*username_count)++], "%s_%c%s", first_upper, last_upper[0], date);
+
+        sprintf(usernames[(*username_count)++], "%s%s", first_lower);
+        sprintf(usernames[(*username_count)++], "%s%s", last_lower);
+        sprintf(usernames[(*username_count)++], "%s%s%s", first_lower, last_lower);
+        sprintf(usernames[(*username_count)++], "%s.%s%s", first_lower, last_lower);
+        sprintf(usernames[(*username_count)++], "%c%s%s", first_lower[0], last_lower);
+        sprintf(usernames[(*username_count)++], "%s%c%s", first_lower, last_lower[0]);
+        sprintf(usernames[(*username_count)++], "%c.%s%s", first_lower[0], last_lower);
+        sprintf(usernames[(*username_count)++], "%s.%c%s", first_lower, last_lower[0]);
+        sprintf(usernames[(*username_count)++], "%s_%s%s", first_lower, last_lower);
+        sprintf(usernames[(*username_count)++], "%c_%s%s", first_lower[0], last_lower);
+        sprintf(usernames[(*username_count)++], "%s_%c%s", first_lower, last_lower[0]);
 
         sprintf(usernames[(*username_count)++], "%s%s", first_lower, date);
         sprintf(usernames[(*username_count)++], "%s%s", last_lower, date);
