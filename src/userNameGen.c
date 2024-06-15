@@ -8,7 +8,7 @@
 #define MAX_NAME_LENGTH 50
 #define MAX_USERNAMES 1000
 
-void generateUsernames(char names[MAX_NAMES][MAX_NAME_LENGTH], int name_count, char usernames[MAX_USERNAMES][MAX_NAME_LENGTH], long *username_count) {
+void generateUsernames(char names[MAX_NAMES][MAX_NAME_LENGTH], int name_count, char usernames[MAX_USERNAMES][MAX_NAME_LENGTH], int *username_count) {
     *username_count = 0;
     
     // Get the current date
